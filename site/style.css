@@ -177,9 +177,9 @@ nav{
     transition: all .3s ease;
 }
 .btn-contato::before{
-    content:" →";
-    width: 43px;
-    height: 43px;
+    content: "➝";
+    width: 42px;
+    height: 42px;
     background-color: #d7a8ff;
     border-radius: 50%;
     display: flex;
@@ -188,8 +188,56 @@ nav{
     transition: transform .4s ease;
 }
 .btn-contato:hover::before{
-    transform: translatex(10px);
+    transform: translateX(10px);
 }
 .btn-contato:hover{
     transform: translateY(-2px);
+}
+.cardapio{
+    padding: 80px 48px 60px;
+}
+.cardapio-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -1px;
+    color: #6c2bff;
+}
+.carousel-wrapper{
+    position: relative;
+}
+.carousel-track-outer{
+    overflow: hidden;
+    border-radius: 18px;
+}
+.carousel-track{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    flex: 0 0 calc(33.333% - 14px);
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform .25s;
+    background-color: #f6f4ff;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+.card-img-placeholder{
+    position: absolute;
+    background: linear-gradient(160deg, ddd5ff 0%, #f8d7fa 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #5a4b7a;
+    inset: 0;
 }
