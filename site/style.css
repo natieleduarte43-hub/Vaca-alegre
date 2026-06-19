@@ -233,11 +233,96 @@ nav{
 }
 .card-img-placeholder{
     position: absolute;
-    background: linear-gradient(160deg, ddd5ff 0%, #f8d7fa 100% );
+    background: linear-gradient(160deg, #ddd5ff 0%, #f8d7fa 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: #5a4b7a;
+    color: #f8f7f9;
     inset: 0;
+   
+}
+.card .featured .card-img-placeholder{
+     background: linear-gradient(160deg, #a78bfa 0%, #e879f9 100%);
+}
+.card-info{
+    position: relative;
+    background: linear-gradient(to top rgba(20,10,40,0.82) 0%, transparent 100%);
+    padding: 20px 18px 18px;
+    color: #fff;
+}
+.card-info h3{
+    font-family: sans-serif;
+    margin-bottom: 6px;
+}
+.card-info p{
+    color:white;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.card-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+.card-tag::before{
+    content: "❤︎";
+    color: #e57ae0;
+}
+.carousel-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.carousel-btn{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5519ee;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, transform .15s;
+    font-size: 20px;
+}
+.carousel-btn:hover{
+    background-color: #24105c;
+    transform: scale(1.08);
+}
+.carousel-dots{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+footer{
+    background-color: #f6f4ff;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(108, 43, 255, 0.08);
+}
+.footer-copy{
+    color: #5519ee;
+    letter-spacing: 5px;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 14px;
+}
+.footer-socials a{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(132, 86, 1, 0.01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #24105c;
+    text-decoration: none;
 }
